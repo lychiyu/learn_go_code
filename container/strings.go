@@ -47,6 +47,6 @@ func main() {
 	strings.Trim()
 	strings.TrimRight()
 	strings.TrimLeft()
-	 */
+	*/
 
 }

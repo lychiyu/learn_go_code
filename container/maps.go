@@ -6,7 +6,7 @@ import "fmt"
 map使用哈希表，key必须可以比较相等
 除了slice、map、function的内建类型都可以作为key
 Struct类型不包含上述类型，也可以作为key
- */
+*/
 func main() {
 	m := map[string]string{
 		"name": "lychiyu",
@@ -30,15 +30,15 @@ func main() {
 	}
 
 	fmt.Println("get value")
-	fmt.Println(m["1name"] == "")	// map获取不存在的key时是空字符串
+	fmt.Println(m["1name"] == "") // map获取不存在的key时是空字符串
 
-	if name, ok := m["name"]; ok{
+	if name, ok := m["name"]; ok {
 		fmt.Println(name)
-	}else {
+	} else {
 		fmt.Println("not exist")
 	}
 
 	fmt.Println("delete value from map")
 	delete(m, "age")
-	fmt.Println(m["age"]=="")
+	fmt.Println(m["age"] == "")
 }

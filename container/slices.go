@@ -13,7 +13,7 @@ slice添加元素时，如果超越了cap，系统会重新分配更大的底层
 s = append(s,val)
 
 
- */
+*/
 
 // []int slice
 func updateSlice(s []int) {
@@ -37,8 +37,8 @@ func main() {
 
 	fmt.Println("slice扩展")
 	arr1 := [...]int{0, 1, 2, 3, 4, 5, 6, 7}
-	s3 := arr1[2:6]	// [2 3 4 5]
-	s4 := s3[3:5]	// [5 6]
+	s3 := arr1[2:6] // [2 3 4 5]
+	s4 := s3[3:5]   // [5 6]
 	fmt.Println(
 		len(s3),
 		cap(s3),

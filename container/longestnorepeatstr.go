@@ -4,7 +4,7 @@ import "fmt"
 
 /**
 获取最长无重复的子串长度
- */
+*/
 func lengthOfNoneRepeatSubStr(s string) int {
 	lastOccurred := make(map[rune]int)
 	start, maxLength := 0, 0

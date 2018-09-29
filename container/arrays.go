@@ -5,9 +5,9 @@ import "fmt"
 /**
 数组是值类型
 在go语言中一般不直接使用数组，而是使用切片
- */
+*/
 
-func printArray(arr [5]int)  {
+func printArray(arr [5]int) {
 	for i, v := range arr {
 		println(i, v)
 	}
@@ -20,7 +20,7 @@ func main() {
 
 	arr3 := [...]int{4, 5, 6, 7, 8}
 	// 4行5列
-	var grid [4][5] int
+	var grid [4][5]int
 	fmt.Println(arr1, arr2, arr3)
 	fmt.Println(arr3[:2])
 	fmt.Println(grid)

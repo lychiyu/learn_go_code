@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"math/cmplx"
 	"math"
+	"math/cmplx"
 )
 
 func variableZeroValue() {
@@ -36,23 +36,23 @@ func variableShorter() {
 	fmt.Println(a, b, c, d)
 }
 
-func euler()  {
+func euler() {
 	// 复数类型
-	c := 3+4i
+	c := 3 + 4i
 	fmt.Println(cmplx.Abs(c))
-	fmt.Println(cmplx.Pow(math.E, 1i*math.Pi)+1)
+	fmt.Println(cmplx.Pow(math.E, 1i*math.Pi) + 1)
 }
 
 // go语言常量定义
-func consts()  {
-	const filename string="test.txt"
+func consts() {
+	const filename string = "test.txt"
 	// 常量的数值可以作为任意类型使用 不需要强转
-	const a, b= 1, 2
-	c := a+b
+	const a, b = 1, 2
+	c := a + b
 	fmt.Println(c)
 }
 
-func enums()  {
+func enums() {
 	// 枚举类型
 	const (
 		//cpp = 0
@@ -62,21 +62,21 @@ func enums()  {
 		// iota表示示自增的种子默认是0
 		cpp = iota
 		java
-		_	// 表示跳过
+		_ // 表示跳过
 		python
 		golang
 	)
 
-	const(
-		b = 1<<(10*iota)
+	const (
+		b = 1 << (10 * iota)
 		kb
 		mb
 		gb
 		tb
 		pb
 	)
-	fmt.Println(cpp, java,python,golang)
-	fmt.Println(b,kb,mb,gb,tb,pb)
+	fmt.Println(cpp, java, python, golang)
+	fmt.Println(b, kb, mb, gb, tb, pb)
 }
 
 func main() {

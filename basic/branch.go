@@ -1,8 +1,8 @@
 package main
 
 import (
-	"io/ioutil"
 	"fmt"
+	"io/ioutil"
 )
 
 func eval(a, b int, op string) int {
@@ -24,15 +24,15 @@ func eval(a, b int, op string) int {
 	return result
 }
 
-func grade(score int ) string {
+func grade(score int) string {
 	g := ""
 	switch {
-	case score<=60:
+	case score <= 60:
 		g = "F"
-	case score<80:
-		g="B"
-	case score<=100:
-		g="A"
+	case score < 80:
+		g = "B"
+	case score <= 100:
+		g = "A"
 	default:
 		panic(fmt.Sprintf("错误的分数: %d", score))
 	}
@@ -50,8 +50,8 @@ func main() {
 
 	// 另一种方法
 	/*
-	if 语句中是可以赋值的
-	if 语句中赋值的变量作用域只在这个if语句中
+		if 语句中是可以赋值的
+		if 语句中赋值的变量作用域只在这个if语句中
 	*/
 	if contents, err := ioutil.ReadFile(filename); err != nil {
 		fmt.Println(err)
@@ -65,11 +65,11 @@ func main() {
 
 	sum := 0
 	/*
-	for的条件里不需要括号
-	for的条件里可以省略初始条件，结束条件，递增表达式
+		for的条件里不需要括号
+		for的条件里可以省略初始条件，结束条件，递增表达式
 	*/
-	for i:=1; i<=100; i++{
-		sum +=i
+	for i := 1; i <= 100; i++ {
+		sum += i
 	}
 	fmt.Println(sum)
 }
